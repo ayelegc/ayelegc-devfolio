@@ -62,7 +62,7 @@ export const gridItems = [
   {
     id: 6,
     title: "Ready to Start a New Project?",
-    description: "If you want to develop a project together, feel free to drop me an eamil, we will create something great.",
+    description: "If you want to develop a project together, feel free to drop me an email, we will create something great.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-50 text-center",
