@@ -5,8 +5,8 @@
 /* Base Layer: Root Variables */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 0 0% 100%; /* White background */
+    --foreground: 0 0% 0%; /* Black text */
 
     --card: var(--background);
     --card-foreground: var(--foreground);
@@ -14,22 +14,22 @@
     --popover: var(--background);
     --popover-foreground: var(--foreground);
 
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 0%; /* Black primary color */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
 
-    --secondary: 240 4.8% 95.9%;
+    --secondary: 0 0% 60%; /* Grayish color for secondary elements */
     --secondary-foreground: var(--primary);
 
     --muted: var(--secondary);
-    --muted-foreground: 240 3.8% 46.1%;
+    --muted-foreground: 0 0% 30%; /* Darker gray for muted text */
 
     --accent: var(--secondary);
     --accent-foreground: var(--primary);
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84.2% 60.2%; /* Keep existing */
     --destructive-foreground: var(--primary-foreground);
 
-    --border: 240 5.9% 90%;
+    --border: 0 0% 90%; /* Light gray border */
     --input: var(--border);
     --ring: var(--foreground);
 
@@ -37,8 +37,8 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 0 0% 0%; /* Black background for dark mode */
+    --foreground: 0 0% 100%; /* White text for dark mode */
 
     --card: var(--background);
     --card-foreground: var(--foreground);
@@ -47,23 +47,23 @@
     --popover-foreground: var(--foreground);
 
     --primary: var(--foreground);
-    --primary-foreground: 240 5.9% 10%;
+    --primary-foreground: var(--background);
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 0 0% 30%; /* Dark gray for secondary elements in dark mode */
     --secondary-foreground: var(--foreground);
 
     --muted: var(--secondary);
-    --muted-foreground: 240 5% 64.9%;
+    --muted-foreground: 0 0% 80%; /* Light gray for muted text in dark mode */
 
     --accent: var(--secondary);
     --accent-foreground: var(--foreground);
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 62.8% 30.6%; /* Keep existing */
     --destructive-foreground: var(--foreground);
 
-    --border: var(--secondary);
+    --border: 0 0% 30%; /* Darker gray border in dark mode */
     --input: var(--border);
-    --ring: 240 4.9% 83.9%;
+    --ring: 0 0% 80%;
   }
 }
 
