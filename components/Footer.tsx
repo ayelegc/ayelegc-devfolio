@@ -1,6 +1,7 @@
 import { FaLocationArrow, FaArrowUp, FaPhone } from "react-icons/fa";
 import { socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
+import Image from "next/image"; // Importing Image from next/image
 
 const Footer = () => {
   // Function to scroll to the top
@@ -12,20 +13,22 @@ const Footer = () => {
     <footer className="relative w-full pt-20 pb-10 bg-white text-black flex flex-col min-h-screen" id="contact">
       {/* Background Grid */}
       <div className="absolute inset-x-0 -bottom-72 min-h-96">
-        <img
+        {/* Replaced <img> with <Image> */}
+        <Image
           src="/footer-grid.svg"
           alt="Background grid"
-          className="w-full h-full opacity-20"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-20"
         />
       </div>
 
       <div className="flex flex-col items-center text-center flex-grow">
         <h1 className="heading lg:max-w-[45vw] text-black">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Ready to take <span className="text-purple">your</span> digital presence to the next level?
         </h1>
         <p className="text-gray-800 mt-5 md:mt-10">
-          Reach out to me and let's discuss how I can help you achieve your goals.
+          Reach out to me and let&apos;s discuss how I can help you achieve your goals.
         </p>
         <div className="flex flex-col gap-6 items-center mt-6">
           <a href="mailto:ayele.gobezie@gmail.com" aria-label="Email Ayele Gobezie">
@@ -59,7 +62,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="w-10 h-10 flex justify-center items-center bg-black-100 rounded-lg border border-gray-300"
             >
-              <img src={img} width={20} height={20} className="text-black" />
+              <Image src={img} width={20} height={20} alt={`Social icon ${id}`} className="text-black" />
             </a>
           ))}
         </div>
